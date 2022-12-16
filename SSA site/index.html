@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>SSA test site</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+  rel="stylesheet"
+/>
+    </head>
+    <body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>S S A</h1>
+            <dive class="banner-btn">
+                <a href="#sec"><span></span>Contact Us</a>
+            </dive>
+        </div>
+        <img src="images/bot2.png" id="bot">
+        <h2 id="text">Scarbrough STEM Association</h2>
+    </section>
+    <div class="sec" id="sec">
+        <h2>About Us</h2>
+        <p>The Scarborough STEM Alliance is a student-run network of robotics teams. We give back to the community by hosting dynamic showcases, workshops, and scrimmages across the community through the cooperation of member teams.<br><br>We pride ourselves on our extensive mentorship network across the Scarborough FLL teams. 
+            As a union of teams, we provide the perfect platform to share ideas, resources, and mentors no matter the level of experience. We forge lasting friendships and community bonds as we all learn together.</p>
+    </div>
+    <div class="sec" id="sec">
+        <h3>Contact us</h3>
+        <p2>You can contact us through our social media or our email</p2>
+    </div>
+    <script>
+        let bot= document.getElementById('bot');
+        let text= document.getElementById('text');
+
+        window.addEventListener('scroll', function(){
+            let value= window.scrollY;
+            text.style.marginRight= value* 2+'px';
+        })
+    </script>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FLL</a></li>
+            <li><a href="#">FTC</a></li>
+            <li><a href="#">FRC</a></li>
+            <li><a href="#">Sponsorship</a></li>
+            <li><a href="#">Schedual</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/menu.png" id="menu">
+</div>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.left = "-250px"
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.left == "-250px"){
+            sideNav.style.left = "0";
+        }
+        else{
+            sideNav.style.left = "-250px";
+        }
+    }
+</script>
+    </body>
+</html> 
